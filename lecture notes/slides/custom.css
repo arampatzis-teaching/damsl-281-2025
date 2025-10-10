@@ -1,0 +1,43 @@
+/* custom.css — global font styles for Reveal.js */
+
+.reveal {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 26px;
+    line-height: 1.5;
+}
+
+.reveal h1 {
+    font-size: 50px;
+    margin-bottom: 0.5em;
+}
+
+.reveal h2 {
+    font-size: 42px;
+    margin-bottom: 0.4em;
+}
+
+.reveal h3 {
+    font-size: 34px;
+    margin-bottom: 0.3em;
+}
+
+.reveal p,
+.reveal li {
+    font-size: 26px;
+}
+
+.reveal code {
+    font-family: 'Courier New', monospace;
+    /* font-size: 90%; */
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-size: 0.9em;
+    margin-top: 0.5em;
+}

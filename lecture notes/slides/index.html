@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>My Reveal.js Presentation</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Reveal.js core CSS -->
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/moon.css" id="theme">
+	<link rel="stylesheet" href="custom.css">
+
+
+	<!-- Highlight.js (for code highlighting) -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+	<!-- KaTeX (for MathJax-style LaTeX rendering) -->
+	<link rel="stylesheet" href="plugin/math/math.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section 
+				data-markdown="slides/01-concurrency.md"
+				data-separator="^---$"
+				data-separator-vertical="^--$"
+				data-separator-notes="^Note:"
+				data-charset="utf-8">
+			</section>
+		</div>
+	</div>
+
+	<!-- Reveal.js core -->
+	<script src="dist/reveal.js"></script>
+
+	<!-- Reveal.js plugins -->
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script src="plugin/math/math.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+
+	<!-- Initialize Reveal -->
+	<script>
+		Reveal.initialize({
+			hash: true,
+			plugins: [
+				RevealMarkdown,
+				RevealHighlight,
+				RevealMath.MathJax2,  // use MathJax 2
+				RevealNotes
+			],
+			math: {
+				mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js',
+				config: 'TeX-AMS_HTML-full'
+			}
+		});
+	</script>
+</body>
+
+</html>

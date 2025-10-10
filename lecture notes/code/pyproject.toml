@@ -1,0 +1,18 @@
+[project]
+name = "code"
+version = "0.1.0"
+description = "Code used in lectures of the Scientific ML course in DAMSL, UOC"
+authors = [
+    {name = "G. Arampatzis"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "jupyter (>=1.1.1,<2.0.0)",
+    "numpy (>=2.3.3,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
