@@ -1,10 +1,11 @@
 import numpy as np
+import time
 from multiprocessing import shared_memory
 
 
 def fetch_data(task_id):
     """Simulate I/O-bound work: e.g., file read or download."""
-    delay = random.uniform(0.2, 1.0)
+    delay = np.random.uniform(0.2, 1.0)
     time.sleep(delay)
     return f"Task {task_id} done in {delay:.2f}s"
 
